@@ -1,0 +1,98 @@
+*{margin: 0;padding: 0;}
+    body{
+        background:url(../../picture/music6.jpeg) no-repeat 50% 40%;
+    }
+       
+                    /*登录界面  */
+    div#tbody{
+        width: 23rem;height:20rem;background:rgba(22,237,29,0.47);
+        margin:5rem auto;border-radius:10px;
+        position:relative;
+    }
+    div#tbody .a1{
+        float:left;
+        margin:1.3rem 0 1rem 2rem;
+        font-size:1rem;font-weight:bold;
+        text-decoration: none;
+        color:#000;
+    }
+    div#tbody img{
+        float:right;
+        margin:1.5rem 1.4rem 0 0;
+    }
+    div#tbody .hr1{
+        position:absolute;
+        width: 19rem;
+        left:2rem;top:2.9rem;
+    }
+    div#tbody .hr2{
+        width: 4rem;
+        border:1px solid #000;
+        position:absolute;
+        left:2rem;top:2.8rem;
+    }
+    /*设置第一个input距离上面的外边距*/
+    div#tbody .shouji{
+        margin-top:2rem;
+    }
+    /*设置四个input的属性；*/
+    div#tbody input#phone,input#upwd{
+        margin-left:1.8rem;margin-top:1.4rem;
+        width:18rem;padding:0.5rem;
+        border-radius:3px;border-color:#1970ebb2;
+    }
+    /* 好像无法只设置边框红色和隐藏 */
+
+    /*所有p标签红色文字；*/
+    div#tbody p{
+        text-align:right;width:20rem;
+        font-size:0.6em;color:#f00;
+    }
+    /*第一个p标签的文字*/
+    div#tbody .p1{
+        position:absolute;
+        top:4rem;
+    }
+div#tbody .p2{
+    position:absolute;
+    top:8rem;
+}
+    div#tbody button{
+        width: 18.5rem;height: 38px;
+        margin-left:1.6rem;margin-top:2rem;
+        border-radius:3px;background:#1970ebb2;
+        border:0;cursor:pointer;
+    }
+    /*这里开始是注册按钮下面的样式属性*/
+    div#tbody input.tongyi{
+        position: absolute;
+        left:2rem;bottom:1.2rem;
+    }
+    div#tbody label{
+        position: absolute;
+        left:3rem;bottom:0.6rem;
+        font-size:12px;
+    }
+    div#tbody a.a3{
+        font-size:12px;color:#f00;
+        text-decoration: none;
+        position: absolute;
+        left:8rem;bottom:1.1rem;
+    }
+   
+    div#tbody a.a4{
+        position:absolute;
+        right:2rem;bottom:1.1rem;
+        font-size:12px;
+        text-decoration: none;color:#1970ebb2;
+        font-style:italic;
+    }
+    /*这里以上都是登录模块*/
+/*这里是末尾的版本信息*/
+div p.foot1{
+    width:100%;height:3rem;
+    background:#0f0;text-align:center;
+}
+div p.foot1+p.foot1{
+    margin-top:-1rem;
+}

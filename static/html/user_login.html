@@ -1,0 +1,50 @@
+<!-- 1.用户的性别未判断，提交时可以出现在url栏；2.用户输入的数据未判定完整 -->
+<form action="router/user_login",method="post" enctype="application/x-www-form-urlencoded">
+	<!-- 这是用户名称部分,用户名必须大于四位 -->
+	用户名称：<input type="text" placeholder="请输入您的用户名称" onfocus="click1()" onblur="click2()" id="uname"><span id="send1"></span><br>
+		<!-- 这是用户密码部分，密码必须大于8位数 -->
+	用户密码：<input type="password" id="upwd" placeholder="请输入您的登录密码" onfocus="click3()" onblur="click4()"><span id="send2"></span><br>
+	<!-- 这是用户号码部分 -->
+	用户号码：<input type="text" id="phone" placeholder="请输入您的手机号码" onfocus="click5()" onblur="click6()"><span id="send3"></span><br>
+	<!-- 这是用户性别部分 -->
+	用户性别：<input type="radio" name="gender" id="man" value="1" checked>
+	<label for="man">男</label>
+	<input type="radio" name="gender" id="woman" value="0">
+	<label for="woman">女</label><br>
+	<!-- 这是提交登录按钮 -->
+	<input type="submit">
+	<script>
+		function click1(){
+			send1.innerHTML="用户名在4位数以上";
+		}
+		function click2(){
+			if(uname.value.length<"4"){
+				send1.innerHTML="用户名称不合法";
+			}else{
+				send1.innerHTML="ok";
+			}
+		}
+		//这里是密码事件；
+		function click3(){
+			send2.innerHTML="用户密码在8位数以上";
+		}
+		function click4(){
+			if(upwd.value.length<"8"){
+				send2.innerHTML="密码不能使用";
+			}else{
+				send2.innerHTML="ok";
+			}
+		}
+		//这里是用户号码事件；
+		function click5(){
+			send3.innerHTML="请输入您的手机号";
+		}
+		function click6(){
+			if(phone.value.length<"11"){
+				send3.innerHTML="手机号码不正确";
+			}else{
+				send3.innerHTML="ok";
+			}
+		}
+	</script>
+</form>
