@@ -3,7 +3,7 @@ DROP DATABASE IF EXISTS al;
 CREATE DATABASE al CHARSET=UTF8;
 use al;
 
-/*用户信息*/
+/*用户信息/
 CREATE TABLE al_user(
 	uid INT PRIMARY KEY AUTO_INCREMENT,   #用户id
 	uname VARCHAR(32),      #用户名
