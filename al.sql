@@ -15,7 +15,7 @@ CREATE TABLE al_user(
 
 
 
-/*用户信息*/
+/*用户信*/
 INSERT INTO al_user VALUES
 (NULL,'zlal','12345678','11111111111','1'),
 (NULL,'aaal','12345678','12222222222','0'),
