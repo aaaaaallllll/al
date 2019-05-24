@@ -4,7 +4,7 @@ CREATE DATABASE al CHARSET=UTF8;
 use al;
 
 /*用户信息/
-CREATE TABLE al_user
+CREATE TABLE al_user(
 	uid INT PRIMARY KEY AUTO_INCREMENT,   #用户id
 	uname VARCHAR(32),      #用户名
 	upwd VARCHAR(32),      #用户密码
